@@ -382,7 +382,7 @@ button .select-button {
 }
 
 .custom-select a {
-  margin-top: 8%;
+  margin-top: 10%;
 
 }
 .custom-select ul li label a {
@@ -587,27 +587,11 @@ input[type="submit"] {
   transform: translateX(calc(-250px * 7));
   }
   }
-  .slider {
-  background: var(--menu-bg);
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-  height: 0.0000000001vh;
-  margin: auto;
-  margin-bottom: 0%;
-  padding-bottom:0%;
-  overflow: hidden;
-  position: relative;
-  width: 900px;
-  }
 
   .slider .slide-track {
   -webkit-animation: scroll 40s linear infinite;
   animation: scroll 40s linear infinite;
-  display: flex;
   width: calc(250px * 14);
-  }
-  .slider .slide {
-  width: 100px;
-  align-items: center;
   }
 
   .hero2 {
@@ -640,6 +624,18 @@ input[type="submit"] {
   }
 
   @media (max-width: 768px) {
+    body, html {
+      box-sizing: border-box;
+      margin: 1em;
+      padding: 0;
+    }
+
+
+    .header__content{max-width: 22rem;width: 100%;margin: 0 auto; display: flex;justify-content: space-between;}
+
+    .button { 
+      font-size: 0.9rem;
+    margin-top: 1.4em;}
 
     #sbarrato {
       text-decoration: none;
@@ -1017,6 +1013,8 @@ input[type="submit"] {
 	100% { transform: translateX(calc(-250px * 7))}
 }
 
+/*slide skills*/
+
 
 .slider {
 	background: black;
@@ -1055,7 +1053,6 @@ input[type="submit"] {
 	}
 	
 	.slide {
-		height: 1em;
 		width: 50%;
 	}
 }
