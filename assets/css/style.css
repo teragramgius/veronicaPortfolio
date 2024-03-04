@@ -430,12 +430,11 @@ input[type=text], select, textarea {     /*stile form*/
 }
 
 #contactsection {
-  max-width: 80%;
+  max-width: 100%;
 }
 
 #form {
   text-transform:uppercase;
-  max-width: 75%;
 }
 
 #icons {
