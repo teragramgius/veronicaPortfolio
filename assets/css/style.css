@@ -1,20 +1,17 @@
+/* ---- url ---- */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-/* ---- variabili ---- */
+
+/* ---- root ---- */
 :root{
   --menu-bg: #000; 
   --header-color: #333;
   --secondary-color: whitesmoke;
 }
 
-/* ---- reset ---- */
-/* em Ã¨ una unitÃ  scalabile, al contrario dei pixel (fixed). Questo significa che prende la misura default e la moltiplica per il numero che scelgo (es: 4em = 4xmisura di base) ---- */
+/* ---- elementi ---- */
 h1,h2,h3,h4,h5,h6, p, ol, ul{
   margin: 0 0 1rem 0;
   padding: 0;
-}
-
-#nudge {
-  visibility: hidden;
 }
 
 ol,ul{
@@ -25,7 +22,6 @@ ol,ul{
 li {list-style: none;}
 ul {list-style-type:none;}
 
-
 button {
   background: none;
   color: inherit;
@@ -35,6 +31,7 @@ button {
   cursor: pointer;
   outline: inherit;
 }
+
 img{
   height: auto;
 }
@@ -58,10 +55,12 @@ h4{
 
 h5{
   font-size: 0.8rem;
-} 
+}
+
 h6{
   font-size: 0.6rem;
 }
+
 a{
   text-decoration:none;
   margin: 0.2em;
@@ -165,8 +164,6 @@ nav a:hover img {
   src: url('fonts/Montserrat-VariableFont_wght.ttf');
 }
 
-
-
 /* ---- ! Sistema di titoli ---- */
 h1, .text-1 {
   font-size: 3.6rem;margin-bottom:1rem
@@ -195,37 +192,25 @@ p{
 .text-center{
   text-align: center;
 }
-/*>>>>>>>>>>>><< Continua qui */
 
-.header{ 
-background-color: var(--menu-bg); 
-color: var(--header-color);
-position: fixed; 
-top:0;  /* non c'Ã¨ bisogno che scriva 'margin-top' perchÃ¨ la posizione Ã¨ fixed*/
-left:0; 
-z-index: 9999; 
-width: 100%; 
-padding: 3vh 3vw; 
-}
-.header__content{
-width: 100%;
-margin: 0 auto; 
-display: flex;
+#nudge {
+  visibility: hidden;
 }
 
-.header__logo{
-display: flex; 
-align-items: center;
-color:var(--secondary-color);
-font-size: 1.3rem;
-}
-.header__menu{
-padding: 0;
-margin-left: 40em;
-}
-.header__menu li{
-display: inline-block; /*visualizzazone in row*/
-}
+/*>>>>>>>>>>>><< Header */
+
+.header{ background-color: var(--menu-bg); position: fixed; top:0;  left:0; z-index: 9999; width: 100%; padding: 10px 15px; }
+.header__content{max-width: 90rem;width: 100%;margin: 0 auto; display: flex;justify-content: space-between;}
+
+
+.header__logo{display: flex; align-items: center;color:var(--menu-color)}
+
+
+.header__menu{padding: 0;margin: 0;}
+.header__menu li{display: inline-block;}
+.header__menu li a{color:var(--menu-color); opacity: 1;display: block;padding: 16px;font-size: 15px;}
+
+
 
 /*
 .header__menu li.active a {
@@ -239,18 +224,7 @@ display: inline-block; /*visualizzazone in row*/
 }
 
 
-.header__menu li a{
-color:var(--secondary-color);
-opacity: 1;
-display: block;
-padding: 0.001vh;  /*padding elementi header da modificare*/
-font-size: 1.3rem;
-}
-.header__menu li a:hover {
-  text-decoration: line-through;
-  text-decoration-color: #2d89fa;
-  text-decoration-thickness: 0.2rem;
- }
+
 
 canvas {
 position: fixed;
@@ -385,19 +359,13 @@ background-position: center center; background-size:cover;
 /* ! Button System */
 .button { 
 font-size: 1rem; text-transform: uppercase; background:#2d89fa; color:#fff; 
-text-decoration: none;padding: 14px 25px; display: inline-block; margin: 3%;
-border-radius: 14px; font-weight: 700;
+text-decoration: none;padding: 0.8em; display: inline-block;
+border-radius: 0.7em; font-weight: 700;
 }  
 
 .button:hover{
 background: #333; 
 }
-
-.button-small { 
-font-size: 1rem; text-transform: uppercase; background: #EF6362; color:#fff; 
-text-decoration: none;padding: 10px 20px; display: inline-block;
-border-radius: 4px; font-weight: 700;
-} 
 
 footer a {
   text-decoration: none;
@@ -408,10 +376,21 @@ button .select-button {
   margin: 0;
   height: auto;
 }
+.custom-select{
+  display: flex;
+  all: unset;
+}
 
+.custom-select a {
+  margin-top: 8%;
+
+}
 .custom-select ul li label a {
-  text-decoration: none;
+  all: unset;
   color: var(--menu-color);
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 input[type=text], select, textarea {     /*stile form*/
@@ -660,17 +639,6 @@ input[type="submit"] {
     height: 15em;
   }
 
-  #work {
-    
-text-align: center; padding:10px; min-height:600px; width:100%; 
-display:flex; flex-direction:column; justify-content:center; 
-background-position: center center; background-size:cover;
-  }
-
-  #work h2 {
-    margin-bottom: 2.3em;
-  }
-
   @media (max-width: 768px) {
 
     #sbarrato {
@@ -916,7 +884,7 @@ background-position: center center; background-size:cover;
     border-color:#000 !important;
     color: white !important;
     width: 100%;
-    font-size: 1.15rem;
+    font-size: 1rem;
     background-color: #fff;
     padding: 0.675em 1em;
     border: 1px solid #caced1;
