@@ -161,7 +161,7 @@ nav a:hover img {
 /* ---- fonts ----- */
 @font-face {
   font-family: 'Montserrat'; /* ---- qui posso chiamarlo anche 'font di Veronica' ----- */
-  src: url('fonts/Montserrat-VariableFont_wght.ttf');
+  src: url('/assets/fonts/Montserrat-VariableFont_wght.ttf');
 }
 
 /* ---- ! Sistema di titoli ---- */
@@ -646,6 +646,10 @@ input[type="submit"] {
 
     canvas{
       visibility: hidden;
+    }
+
+    #nonNudge {
+      display: none;
     }
 
     h1{
