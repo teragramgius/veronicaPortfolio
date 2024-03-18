@@ -31,6 +31,7 @@
   <div class="overflow-h"> <!--Div principale-->
     <!--Header-->
     <header class="header"> 
+
       <div class="header__content">
         <a class="header__logo" href="#home" alt="home">
           <strong>VS</strong>
@@ -45,11 +46,11 @@
         </ul>
         <!--Lang Dropdown-->
         <div class="custom-select">
-          <a class="select-button" role="combobox" aria-labelledby="select button" aria-haspopup="listbox"
+          <button class="select-button" role="combobox" aria-labelledby="select button" aria-haspopup="listbox"
             aria-expanded="false" aria-controls="select-dropdown">
             <span class="selected-value">English</span>
             <span class="arrow"></span>
-        </a>
+          </button>
           <ul class="select-dropdown" role="listbox" id="select-dropdown">
             <li role="option">
               <input type="radio" id="italiano" name="language" />
@@ -82,113 +83,180 @@
       </div>
     </div>
     <!--Who-->
-    <section class="grid hero" id="about">
-      <div class="col-50 pt-3 sma-text-left">
+    <section class="grid hero pt-4 mb-1" id="about">
+      <div class="col-50 p-3 relative">
         <button id="sbarrato"><h2 class="text-1">Who is Veronica Simonte?</h2> <br>
         <h4>
           Hello, I'm Veronica Simonte, a Junior UI/UX Designer constantly seeking new inspirations and innovations. <br><br>My journey in Design began with a course in Web Design at the European Institute of Design (IED) and specialized training in UI/UX Design at Start2impact University. <br><br>I've also expanded my skills with a course on Figma at Talent Garden, Social Media Marketing at SDA Bocconi, and a course in Digital Marketing Fundamentals with Google. <br><br>My design philosophy? <br>Life is too short and stressful to endure boring digital experiences! <br><br>Explore my portfolio to see my creations. I'm open to new challenges and creative collaborations, so feel free to contact me!</h4></button>
         <a href="mailto: veronicasimonte@gmail.com" target="_blank" class="button">Let's talk!</a>
       </div>
-      <div class="col-50 p-3 relative">
+      <div class="col-50 p-3 relative" >
         <img src="assets/img/studies/logos.png" class="img-res img-small" height="100" width="100" alt="certifications-logos"> 
       </div>      
     </section>
 
-    <section id="work" class="grid grid--center">
-      <div class="col-70 text-center pt-4 pb-3">
-        <h2>My Skills</h2>
-      </div>      
-      <div class="slider col-100 text-center">
-        <div class="slide-track">
-          <div class="slide">
-            <img src="assets/img/skills/f.png" height="3" width="3" alt="" />
-          </div>
-          <div class="slide">
-            <img src="assets/img/skills/2.png" height="100" width="250" alt="" />
-          </div>
-          <div class="slide">
-            <img src="assets/img/skills/3.png" height="100" width="250" alt="" />
-          </div>
-          <div class="slide">
-            <img src="assets/img/skills/4.png" height="100" width="250" alt="" />
-          </div>
-          <div class="slide">
-            <img src="assets/img/skills/5.png" height="100" width="250" alt="" />
-          </div>
-          <div class="slide">
-            <img src="assets/img/skills/6.png" height="100" width="250" alt="" />
-          </div>
+
+    
+
+    <h2 class="col-100 text-center mb-4">Skills</h2>
+
+    <!--Skills & Works-->
+    <section class="slider" id="work">
+      <div class="slide-track">
+        <div class="slide">
+        <img src="assets/img/skills/f.png" height="50" width="50" alt="figma-logo" />
+        </div>
+        <div class="slide">
+        <img src="assets/img/skills/id.png" height="50" width="50" alt=adobe-id" />
+        </div>
+        <div class="slide">
+        <img src="assets/img/skills/ai.png" height="50" width="50" alt="adobe-ai" />
+        </div>
+        <div class="slide">
+        <img src="assets/img/skills/ps.png" height="50" width="50" alt="adobe-ps" />
+        </div>
+        <div class="slide">
+        <img src="assets/img/skills/pr.png" height="50" width="50" alt="adobe-pr" />
+        </div>
+        <div class="slide">
+        <img src="assets/img/skills/w.png" height="70" width="70" alt="wordpress" />
+        </div>
+        <div class="slide">
+        <img src="assets/img/skills/css.png" height="50" width="50" alt="css" />
+        </div>
+        <div class="slide">
+        <img src="assets/img/skills/html.png" height="50" width="50" alt="html" />
+        </div>
+        <div class="slide">
+        <img src="assets/img/skills/uxui.png" height="70" width="70" alt="ux/ui" />
+        </div>
+        <div class="slide">
+        <img src="assets/img/skills/graphic.png" height="70" width="70" alt="graphic design" />
+        </div>
+        <div class="slide">
+        <img src="assets/img/skills/wireframing.png" height="70" width="70" alt="wireframing" />
+        </div>
+        <div class="slide">
+        <img src="assets/img/skills/css.png" height="70" width="70" alt="css" />
+        </div>
+        <div class="slide">
+        <img src="assets/img/skills/accessibility.png" height="70" width="70" alt="accessibility" />
+        </div>
+        <div class="slide">
+        <img src="assets/img/skills/xd.png" height="50" width="50" alt="skills xd" />
+        </div>
+        <div class="slide">
+        <img src="assets/img/skills/f.png" height="50" width="50" alt="figma-logo" />
+        </div>
+        <div class="slide">
+        <img src="assets/img/skills/id.png" height="50" width="50" alt=adobe-id" />
+        </div>
+        <div class="slide">
+        <img src="assets/img/skills/ai.png" height="50" width="50" alt="adobe-ai" />
+        </div>
+        <div class="slide">
+        <img src="assets/img/skills/ps.png" height="50" width="50" alt="adobe-ps" />
+        </div>
+        <div class="slide">
+        <img src="assets/img/skills/pr.png" height="50" width="50" alt="adobe-pr" />
+        </div>
+        <div class="slide">
+        <img src="assets/img/skills/w.png" height="70" width="70" alt="wordpress" />
+        </div>
+        <div class="slide">
+        <img src="assets/img/skills/css.png" height="50" width="50" alt="css" />
+        </div>
+        <div class="slide">
+        <img src="assets/img/skills/html.png" height="50" width="50" alt="html" />
+        </div>
+        <div class="slide">
+        <img src="assets/img/skills/uxui.png" height="70" width="70" alt="ux/ui" />
+        </div>
+        <div class="slide">
+        <img src="assets/img/skills/graphic.png" height="70" width="70" alt="graphic design" />
+        </div>
+        <div class="slide">
+        <img src="assets/img/skills/wireframing.png" height="70" width="70" alt="wireframing" />
+        </div>
+        <div class="slide">
+        <img src="assets/img/skills/css.png" height="70" width="70" alt="css" />
+        </div>
+        <div class="slide">
+        <img src="assets/img/skills/accessibility.png" height="70" width="70" alt="accessibility" />
+        </div>
+        <div class="slide">
+        <img src="assets/img/skills/xd.png" height="50" width="50" alt="skills xd" />
         </div>
       </div>
-      <div class="col-100 text-center mb-4 mt-4">
-        <p>Continue below to see a preview of my works, or
-        <a href="resume.html" class="button">GO TO PORTFOLIO</a>
+      
+    </section>     
+    <!--Button CV--> 
+    <section class="col-100 text-center">
+      <a href="assets/documents/cvEn.pdf" class="button">Download my CV!</a>
+      <div class="col-100 mt-4">
+        <h2 class="text-center">Works</h2>
       </div>
-      <div class="col-70 text-center pt-4 pb-3">
-        <h2>My Works</h2>
-        <p><a id="nudge">Tap To Have An Overview</a></p>
-        <p id="nonNudge">An Overview</p>
-      </div> 
-
-      <div class="text-center mt-4" id="scrollHorizontal">
+      
+      <div class="text-center mt-4 ">
         <nav id="nav">    
           <!--Work 3-->
-          <a href="#work">
+          <a href="assets/documents/orgasmicPitch.pdf" target="_blank">
             <span data-img="1">ORGASMIC</span>
             <div class="img-wrapper">
               <img
-                src="COME TO ORGASMIC.jpg" />
+                src="assets/img/projects/comeToOrgasmic.jpg" />
             </div>
           </a>
           <!--Work 4-->
-          <a href="./assets/1sunnee brevesuper def2.pdf">
+          <a href="assets/documents/sunneePitch.pdf" target="_blank">
             <span>SUNNEE</span>
             <div class="img-wrapper">
               <img
-                src="SUNNEE_ LET'S DIVE.jpg" />
+                src="assets/img/projects/suneeLetsDive.jpg" />
             </div>
           </a>
           <!--Work 5-->
-          <a href="./assets/3vestito verde portfolio copia.pdf">
+          <a href="assets/documents/vestitoVerdePitch.pdf" target="_blank">
             <span>VESTITO VERDE</span>
             <div class="img-wrapper">
               <img
-                src="VESTITO VERDE.jpg" />
+                src="assets/img/projects/vestitoVerde.jpg" />
             </div>
           </a>
           <!--Work 6-->
-          <a href="#">
+          <a href="#" target="_blank">
             <span>WORK IN PROGRESS</span>
             <div class="img-wrapper">
               <img
-                src="WORK IN PROGRESS.jpg" />
+                src="assets/img/projects/wip.jpg" />
             </div>
           </a>
           <!--Work 7-->
-          <a href="#">
+          <a href="#" target="_blank">
             <span>WORK IN PROGRESS</span>
             <div class="img-wrapper">
               <img
-                src="WORK IN PROGRESS.jpg" />
+                src="assets/img/projects/wip.jpg" />
             </div>
           </a>
-          <a href="#">
+          <!--Work 8-->
+          <a href="#" target="_blank">
             <span>WORK IN PROGRESS</span>
             <div class="img-wrapper">
               <img
-                src="WORK IN PROGRESS.jpg" />
+                src="assets/img/projects/wip.jpg" />
             </div>
           </a>
         </nav>
       </div>
     </section>
 
+    
 
-
-  
+    <!--Footer-->
     <section id="contact">
-      <footer class="footer grid">
-        <section class="col-50 relative" id="contactsection" > 
+      <footer class="footer grid p-3">
+        <section class="col-50" id="contactsection"> 
           <h3>VERONICA SIMONTE</h3>
           <p>Veronica Simonte is a UX/UI designer based in Italy. <br>For any inquiries, you can write here.</p>
           <!--contact form-->
@@ -222,13 +290,10 @@
           </ul>
         </div> 
       </footer>
-      <p class="footer-bottom" id="privacy">
-        &copy; 2024 Veronica Simonte <a class="footer-link" href="#modal">Privacy Policy</a>
-      </p>
+    <div class="text-center mb-1 pb-1" id="privacy"><div> &copy; 2024 Veronica Simonte <a class="footer-link" href="#modal">Privacy Policy </a>
     </div> 
     </section>
 
-    
     <!-- Privacy Policy Modal -->
     <div class="modal-wrapper" id="modal">
       <div class="modal-body card">
