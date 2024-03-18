@@ -644,7 +644,7 @@ input[type="submit"] {
       font-size: 0.9rem;
     margin-top: 1.4em;}
 
-    #sbarrato {
+    #sbarrato:hover {
       text-decoration: none;
       visibility: none;
     }
