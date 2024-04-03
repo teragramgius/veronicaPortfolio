@@ -624,7 +624,7 @@ input[type="submit"] {
     height: 15em;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     body, html {
       box-sizing: border-box;
       padding: 0;
