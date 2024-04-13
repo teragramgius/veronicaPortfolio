@@ -8,6 +8,25 @@
   --secondary-color: whitesmoke;
 }
 
+.navbar .nav-link, 
+.navbar .dropdown-item {
+  --secondary-color: whitesmoke !important; /* Cambia il colore del testo */ }
+
+  .navbar-dark {
+    background-color: black !important;
+    text /* Set the background color to black */
+  }  
+
+  /* Custom CSS for dropdown menu */
+  .navbar-dark .dropdown-menu {
+    background-color: black; /* Set the background color to black */
+  }
+  
+  /* Custom CSS for dropdown items */
+  .navbar-dark .dropdown-menu .dropdown-item {
+    color: white; /* Set the text color to white */
+  }
+
 /* ---- elementi ---- */
 h1,h2,h3,h4,h5,h6, p, ol, ul{
   margin: 0 0 1rem 0;
@@ -79,6 +98,7 @@ body, html{
   box-sizing: border-box; 
 }
 
+
 /* ---- stili di base ----- */
 html{
   scroll-behavior: smooth;
@@ -91,7 +111,7 @@ body{
   font-family: 'Montserrat';
 }
 
-nav {
+nav .work {
   position: relative;
   top: 10%;
   left: 67%;  /* per decentrare */
@@ -101,7 +121,7 @@ nav {
   height: 60vh;
 }
 
-nav > a {
+nav .work > a {
   color: rgb(184, 184, 184);
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
@@ -113,17 +133,17 @@ nav > a {
   text-align: center;
 }
 
-nav > a:hover {
+nav .work> a:hover {
   color: #fff;
 }
 
-nav > a > span {
+nav .work > a > span {
   position: relative;
   z-index: 2;
   width: 400em;
 }
 
-nav a .img-wrapper {
+nav .work a .img-wrapper {
   position: absolute;
   opacity: 0;
   transform: translate(-50%, -50%) scale(0.5);
@@ -134,7 +154,7 @@ nav a .img-wrapper {
   overflow: hidden;
 }
 
-nav a img {
+nav .work a img {
   position: absolute;
   opacity: 0;
   top: 0;
@@ -148,12 +168,12 @@ nav a img {
   object-fit: contain;
 }
 
-nav a:hover .img-wrapper {
+nav .work a:hover .img-wrapper {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
 }
 
-nav a:hover img {
+nav .work a:hover img {
   opacity: 1;
   transform: scale(1.5);
 }
@@ -166,7 +186,7 @@ nav a:hover img {
 
 /* ---- ! Sistema di titoli ---- */
 h1, .text-1 {
-  font-size: 3.6rem;margin-bottom:1rem
+  font-size: 3.6rem;margin-bottom:1rem;
 }
 
 h2, .text-1 {
@@ -344,14 +364,11 @@ background-position: center center; background-size:cover;
   background-image: url("https://images.unsplash.com/photo-1563089145-599997674d42?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 } */
 
-#sbarrato {
-  text-align: left;
-}
+
 #sbarrato:hover {
   text-decoration: line-through;
   text-decoration-color: #2d89fa;
   text-decoration-thickness: 0.2rem;
-
 }
 /* Footer */
 .footer{background-color: #2d89fa;color:#fff}
@@ -903,6 +920,11 @@ input[type="submit"] {
     text-align: left;
   }
   
+  .black {
+    background-color: black !important; 
+  }
+
+
   .arrow {
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;

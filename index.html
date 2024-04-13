@@ -8,8 +8,12 @@
   <meta name="keywords" content="UX, UI, Veronica Simonte, Designer, UX/UI Services">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatiile" content="ie=edge">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
   <title>Veronica Simonte Portfolio</title>
+
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" alt="cloudflare" target="_blank" />
   <link rel="stylesheet" href="assets/css/style.css" alt="css stylesheet">
@@ -30,50 +34,46 @@
   <canvas></canvas> <!--inizializzo il canvas che mi servirà per l'immagine profilo a comparsa-->  
   <div class="overflow-h"> <!--Div principale-->
     <!--Header-->
-    <header class="header"> 
-
-      <div class="header__content">
-        <a class="header__logo" href="#home" alt="home">
-          <strong>VS</strong>
-        </a>
-        <ul class="header__menu">
-          <li><a href="#about" alt="about">About</a></li>
-          <li><a href="#work" alt="works">Works</a></li>
-          <li><a href="#contact" alt="contact">Contact</a></li>
-          <li id="english"><a href="" alt="english">EN 🇬🇧</a></li>
-          <li id="italiano"><a href="./index_it.html" alt="italiano">IT 🇮🇹</a></li>
-          <li id="espanol"><a href="./index_es.html" alt="espanol">ES 🇪🇸</a></li>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+      <!-- Brand -->
+      <a class="navbar-brand" href="index.html">VS</a>
+    
+      <!-- Toggler/collapsible Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#work">Works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
         </ul>
-        <!--Lang Dropdown-->
-        <div class="custom-select">
-          <a class="select-button" role="combobox" aria-labelledby="select button" aria-haspopup="listbox"
-            aria-expanded="false" aria-controls="select-dropdown">
-            <span class="selected-value">English</span>
-            <span class="arrow"></span>
-        </a>
-          <ul class="select-dropdown" role="listbox" id="select-dropdown">
-            <li role="option">
-              <input type="radio" id="italiano" name="language" />
-              <label for="italiano"><a href="./index_it.html">Italiano</a></label>
-            </li>
-            <li role="option">
-              <input type="radio" id="english" name="language" />
-              <label for="english"><a href="#">English</a></label>
-            </li>
-            <li role="option">
-              <input type="radio" id="espanol" name="language" />
-              <label for="espanol"><a href="./index_es.html">Espanol</a></label>
-            </li>
-          </ul>
-        </div>
-        <div class="header__quick">
-          <div class="icon-hamburger">
-            <span></span>
-            <span></span>
-          </div>
-        </div>
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              English
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item" href="index_it.html">Italiano</a>
+              <a class="dropdown-item" href="index_es.html">Espanol</a>
+              <a class="dropdown-item" href="#">English</a>
+            </div>
+          </li>
+        </ul>
       </div>
-    </header>
+    </nav>
+    
+    
+    
+    
     <!--Home-->
     <div class="grid hero" id="home" data-section="home">
       <div class="col-100 pt-5 text-center">
@@ -121,72 +121,13 @@
           </div>
         </div>
       </div>
+
+
       <div class="col-100 text-center mb-4 mt-4">
-        <p id="nonNudge">Continue below to see a preview of my works, or
         <a href="resume.html" class="button">GO TO PORTFOLIO</a>
       </div>
-      <div class="col-70 text-center pt-4 pb-3" id="nonNudge">
-        <h2>My Works</h2>
-      </div> 
-
-      <p class="mb-4" id="nudge"><a href="resume.html" class="button">GO TO PORTFOLIO</a></p>
       
-
-      <div class="text-center mt-4" id="nonNudge">
-        <nav id="nav">    
-          <!--Work 3-->
-          <a href="#work">
-            <span data-img="1">ORGASMIC</span>
-            <div class="img-wrapper">
-              <img
-                src="assets/img/projects/comeToOrgasmic.jpg" />
-            </div>
-          </a>
-          <!--Work 4-->
-          <a href="./assets/1sunnee brevesuper def2.pdf">
-            <span>SUNNEE</span>
-            <div class="img-wrapper">
-              <img
-                src="SUNNEE_ LET'S DIVE.jpg" />
-            </div>
-          </a>
-          <!--Work 5-->
-          <a href="./assets/3vestito verde portfolio copia.pdf">
-            <span>VESTITO VERDE</span>
-            <div class="img-wrapper">
-              <img
-                src="VESTITO VERDE.jpg" />
-            </div>
-          </a>
-          <!--Work 6-->
-          <a href="#">
-            <span>WORK IN PROGRESS</span>
-            <div class="img-wrapper">
-              <img
-                src="WORK IN PROGRESS.jpg" />
-            </div>
-          </a>
-          <!--Work 7-->
-          <a href="#">
-            <span>WORK IN PROGRESS</span>
-            <div class="img-wrapper">
-              <img
-                src="WORK IN PROGRESS.jpg" />
-            </div>
-          </a>
-          <a href="#">
-            <span>WORK IN PROGRESS</span>
-            <div class="img-wrapper">
-              <img
-                src="WORK IN PROGRESS.jpg" />
-            </div>
-          </a>
-        </nav>
-      </div>
     </section>
-
-
-
   
     <section id="contact">
       <footer class="footer grid pt-4">
@@ -500,33 +441,43 @@
     </script>
     <!--Menu sections link-->
     <script>
-      // Get all sections that have an ID defined
-      const sections = document.querySelectorAll("section[id]");
+      // Get all links in the navbar
+      const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+      
       // Add an event listener listening for scroll
       window.addEventListener("scroll", navHighlighter);
+    
       function navHighlighter() {
-    // Get current scroll position
-    let scrollY = window.pageYOffset;      
-    // Now we loop through sections to get height, top, and ID values for each
-    sections.forEach(current => {
-      const sectionHeight = current.offsetHeight;
-      const sectionTop = current.offsetTop - 300;
-      const sectionId = current.getAttribute("id"); // Corrected here
-      /*
-      - If our current scroll position enters the space where the current section on screen is, add .active class to the corresponding navigation link, else remove it
-      - To know which link needs an active class, we use the sectionId variable we are getting while looping through sections as a selector
-      */
-      if (
-        scrollY > sectionTop &&
-        scrollY <= sectionTop + sectionHeight
-      ){
-        document.querySelector("a[href*=" + sectionId + "]").classList.add("active");
-      } else {
-        document.querySelector("a[href*=" + sectionId + "]").classList.remove("active");
+        // Get current scroll position
+        let scrollY = window.pageYOffset;
+    
+        // Loop through each link in the navbar
+        navLinks.forEach(link => {
+          // Get the target section's ID from the link's href attribute
+          const sectionId = link.getAttribute("href").substring(1);
+          
+          // Find the target section
+          const targetSection = document.getElementById(sectionId);
+          
+          if (targetSection) {
+            // Get the top position of the target section
+            const sectionTop = targetSection.offsetTop - 300;
+            
+            // Check if the scroll position is within the target section
+            if (scrollY > sectionTop && scrollY <= sectionTop + targetSection.offsetHeight) {
+              // Add the 'active' class to the corresponding navigation link
+              link.classList.add("active");
+            } else {
+              // Remove the 'active' class from the navigation link if not in the target section
+              link.classList.remove("active");
+            }
+          }
+        });
       }
-    });
-  }
     </script>
+    
+    
+    
     <!--Language dropdown-->
     <script>
       const customSelect = document.querySelector(".custom-select");
